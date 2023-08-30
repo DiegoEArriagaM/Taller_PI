@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76AFE693-9D7F-66ED-0F52-E7AE1425F96D" name="Editorial">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>0EA96B03-8B76-8296-A351-AA1D07703064</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="672CE650-72A4-E05B-2359-266FDE63D305">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>C60691A4-FC62-CCD8-C59A-2681CA0D79BA</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="36F18DBC-6717-AC0A-EC35-2314DCE87138">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>AD394E73-9952-AB9B-BB0D-1590EC0D4522</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pais" id="3AC42DE9-13DE-691A-32EC-DFFC5AF386D5">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>3C369F18-C51C-4FB1-6B57-66BB306D464B</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ciudad" id="F7331737-9195-6512-91F2-C0FC4DE6DD8D">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>060D8643-4B86-8CB3-6BA5-1650F5E9AC97</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6613B7D6-DF51-5668-31B2-0B3B6994EC2A" name="Editorial_PK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>B79E4326-E5B1-ABE8-86E1-1033F11EC579</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="672CE650-72A4-E05B-2359-266FDE63D305"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

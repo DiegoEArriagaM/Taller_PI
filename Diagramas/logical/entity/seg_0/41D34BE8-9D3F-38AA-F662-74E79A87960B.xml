@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="41D34BE8-9D3F-38AA-F662-74E79A87960B" name="Libro">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:20:05 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="AF7A0DC8-72B0-14EE-EF63-2C33B6462B43">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:20:25 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="12DE43E9-D1AB-6AE9-F96C-9F3DB88BE11E">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:20:46 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="edicion" id="6C30A39A-AD18-7E9F-FB45-4B7A13884B0C">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:21:04 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock" id="C781B763-C217-4D8D-3979-CCC3C704C759">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:30:11 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="6AB48299-1A55-2740-4CCE-04CC81CF78C9">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:32:56 UTC</createdTime>
+<generatorID>DE9BEE81-06CB-D68C-2F8B-44F5C431CE43</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<referedAttribute>C60691A4-FC62-CCD8-C59A-2681CA0D79BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E68B4ADA-526C-3372-4ABC-3C66372F74B3" name="Libro PK">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:20:33 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF7A0DC8-72B0-14EE-EF63-2C33B6462B43</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

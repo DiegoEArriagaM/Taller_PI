@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="17020931-E3C0-CE3A-1795-6A4F6F186CCD" name="Autoria">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:23:38 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="DEEABC36-183D-3F82-E9D6-E470838DEB51">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:24:02 UTC</createdTime>
+<generatorID>48029A9F-4AF6-8335-FF81-DB22894577A9</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<referedAttribute>AF7A0DC8-72B0-14EE-EF63-2C33B6462B43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="60C7F23B-96BE-4799-A1BD-3EDE5653B590">
+<createdBy>diego</createdBy>
+<createdTime>2023-08-30 14:24:19 UTC</createdTime>
+<generatorID>E926A367-5068-432E-90D9-670305B1BB79</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<referedAttribute>BBC6C6BA-DD01-ADC1-D068-3D5CD4103EE6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="650C3171-F4A2-5BE2-90CE-2B9C39F94AE6" name="Autoria PK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:43:23 UTC</createdTime>
+<ownerDesignName>Diagramas</ownerDesignName>
+<engineerTo>
+<item key="9EAE8BDB-906C-54A2-CF7F-26D08994EAC0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DEEABC36-183D-3F82-E9D6-E470838DEB51</attributeRef>
+<attributeRef>60C7F23B-96BE-4799-A1BD-3EDE5653B590</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

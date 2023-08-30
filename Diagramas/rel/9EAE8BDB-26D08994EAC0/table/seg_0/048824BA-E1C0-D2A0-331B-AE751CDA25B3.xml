@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="048824BA-E1C0-D2A0-331B-AE751CDA25B3" name="Reserva">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>BB8B305D-FABE-44B3-B501-F93D7BA70AF8</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Libro_codigo" id="735BB874-B4C8-6302-B95C-0D52CF433645">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>E9842D6D-2EF2-8D8D-8F06-C7C514C4D664</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0CE77C5-FFC6-2A5B-BC3F-DF4E20290D5D" referredColumn="A1F4DD1A-07FF-636C-F4FC-A361F724BC09"/>
+</associations>
+</Column>
+<Column name="Cliente_dpi" id="C2F3975A-B971-34BD-15BD-9C6F6EF3304D">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>3865B7EC-E9F1-0B46-2250-1DC63079A146</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F780BF26-D3C5-AF8A-52CB-16E088918D3C" referredColumn="3C239350-38C4-4431-8CC1-06041F4C7409"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EDBDA29-3BC6-DA94-5BE6-F8D8217BE5FD" name="Reserva_PK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>5B0F1B08-4DCF-8EA2-0FDD-125AC0F080B3</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="735BB874-B4C8-6302-B95C-0D52CF433645"/>
+<colUsage columnID="C2F3975A-B971-34BD-15BD-9C6F6EF3304D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E8D11F6-E879-7DA4-6CA8-D421C9237245" name="Reserva_Libro_FK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>28A5403D-F656-D337-C731-C17063718D4B</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="735BB874-B4C8-6302-B95C-0D52CF433645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A2208DD-2CCC-2F5E-0355-682183A752D6" name="Reserva_Cliente_FK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>C0EC82D1-1DD3-9594-1D36-A79DA1E4722A</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2F3975A-B971-34BD-15BD-9C6F6EF3304D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

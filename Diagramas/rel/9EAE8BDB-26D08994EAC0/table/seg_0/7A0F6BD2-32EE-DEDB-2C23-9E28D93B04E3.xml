@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A0F6BD2-32EE-DEDB-2C23-9E28D93B04E3" name="Autoria">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>17020931-E3C0-CE3A-1795-6A4F6F186CCD</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Libro_codigo" id="F66AA7A7-83E9-29C3-12FA-C1041D8B4CF0">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>DEEABC36-183D-3F82-E9D6-E470838DEB51</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C086FA77-E178-D74B-C5F1-BFB1150EC484" referredColumn="A1F4DD1A-07FF-636C-F4FC-A361F724BC09"/>
+</associations>
+</Column>
+<Column name="Autor_Id" id="D4C36430-93E0-7F26-205F-208250081A26">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>60C7F23B-96BE-4799-A1BD-3EDE5653B590</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D8A282C-7A3A-41BD-8F64-289E820387B0" referredColumn="7B4F730B-07B1-E846-299B-C1ABC1925922"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="434C7867-1FC9-BCCC-7CC3-7FAA8B063BBA" name="Autoria_PK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>650C3171-F4A2-5BE2-90CE-2B9C39F94AE6</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F66AA7A7-83E9-29C3-12FA-C1041D8B4CF0"/>
+<colUsage columnID="D4C36430-93E0-7F26-205F-208250081A26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0F2E507-E597-1011-D0E3-8C45A0C93FF8" name="Autoria_Libro_FK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>48029A9F-4AF6-8335-FF81-DB22894577A9</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F66AA7A7-83E9-29C3-12FA-C1041D8B4CF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1D064B2-4BC2-DB73-D210-325A58B0EB64" name="Autoria_Autor_FK">
+<createdBy>root</createdBy>
+<createdTime>2023-08-30 14:44:48 UTC</createdTime>
+<generatorID>E926A367-5068-432E-90D9-670305B1BB79</generatorID>
+<ownerDesignName>Diagramas</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4C36430-93E0-7F26-205F-208250081A26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
