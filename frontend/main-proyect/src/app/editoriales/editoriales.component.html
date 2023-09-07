@@ -1,0 +1,24 @@
+<div class="post-preview">
+  <h1>EDITORIALES</h1>
+
+  <div id="carousel2" class="carousel slide">
+    <div class="carousel-inner">
+      <div *ngFor="let item of lista" class="carousel-item active">
+        <img src="../assets/img/home-bg.jpg" class="d-block w-100" alt="...">
+        <div style="background-color: rgba(255, 255, 255, 0.4);" class="carousel-caption">
+          <h5 style="color: black;">{{item.nombre}}</h5>
+          <p style="color: black;">{{item.ciudad}}, {{item.pais}}</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>

@@ -1,0 +1,72 @@
+<div class="post-preview">
+  <h1>LIBROS</h1>
+
+  <div id="carousel1" class="carousel slide">
+    <div class="carousel-inner">
+      <div *ngFor="let item of lista" class="carousel-item active">
+        <div class="card text-center" style="width: 100%; background-color: #4F1C1C;">
+          <img src="../assets/img/home-bg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 style="color: white;">{{item.nombre}}</h5>
+            <p style="color: white;">edicion: {{item.edicion}}</p>
+            <p style="color: white;">Stock: {{item.stock}}</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Modaleditar"
+              style="margin-left: 5px; background-color: #DFAD84;">
+              Editar
+            </button>
+            <a style="margin-left: 5px; background-color: #DFAD84;" class="btn ">Borrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modaleditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Libro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-codigo" class="col-form-label">Nuevo Codigo:</label>
+            <input type="text" class="form-control" id="recipient-codigo">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-nombre" class="col-form-label">Nuevo Nombre:</label>
+            <input type="text" class="form-control" id="recipient-nombre">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-edicion" class="col-form-label">Nueva Edicion:</label>
+            <input type="text" class="form-control" id="recipient-edicion">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-stock" class="col-form-label">Nuevo Stock:</label>
+            <input type="text" class="form-control" id="recipient-stock">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-editorialid" class="col-form-label">Nuevo ID Editorial:</label>
+            <input type="text" class="form-control" id="recipient-editorialid">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn" style="background-color: #DFAD84;">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>

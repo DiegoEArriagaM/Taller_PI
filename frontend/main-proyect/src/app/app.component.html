@@ -19,14 +19,52 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">About</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Sample Post</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Contact</a></li>
+          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="" data-bs-toggle="modal" data-bs-target="#Modalagregar">Agregar Libro</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <div class="modal fade" id="Modalagregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalagregarLabel">Agregar Libro</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="Modalagregar-recipient-codigo" class="col-form-label">Codigo:</label>
+              <input type="text" class="form-control" id="Modalagregar-recipient-codigo">
+            </div>
+            <div class="mb-3">
+              <label for="Modalagregar-recipient-nombre" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control" id="Modalagregar-recipient-nombre">
+            </div>
+            <div class="mb-3">
+              <label for="Modalagregar-recipient-edicion" class="col-form-label">Edicion:</label>
+              <input type="text" class="form-control" id="Modalagregar-recipient-edicion">
+            </div>
+            <div class="mb-3">
+              <label for="Modalagregar-recipient-stock" class="col-form-label">Stock:</label>
+              <input type="text" class="form-control" id="Modalagregar-recipient-stock">
+            </div>
+            <div class="mb-3">
+              <label for="Modalagregar-recipient-editorialid" class="col-form-label">ID Editorial:</label>
+              <input type="text" class="form-control" id="Modalagregar-recipient-editorialid">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn" style="background-color: #DFAD84;">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Page Header-->
   <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
     <div class="container position-relative px-4 px-lg-5">
@@ -45,32 +83,13 @@
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <!-- READ BOOKS ARTICLE -->
-        <div class="post-preview">
-          <h1>LIBROS</h1>
-          
-          <div class="card" style="width: 18rem;">
-            <img src="../assets/img/home-bg.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-
-
-        </div>
+        <app-libros></app-libros>
+        <br />
         <!-- Divider-->
         <hr class="my-4" />
         <!-- EDITORIAL SECTION-->
-        <div class="post-preview">
-          <h1>EDITORIALES</h1>
-          <div class="card" style="width: 18rem;">
-            <img src="../assets/img/home-bg.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
+        <app-editoriales></app-editoriales>
+        <br />
       </div>
     </div>
   </div>
