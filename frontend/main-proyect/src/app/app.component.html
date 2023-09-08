@@ -34,32 +34,32 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form (ngSubmit)="onClickCrearLibro()">
             <div class="mb-3">
               <label for="Modalagregar-recipient-codigo" class="col-form-label">Codigo:</label>
-              <input type="text" class="form-control" id="Modalagregar-recipient-codigo">
+              <input type="text" class="form-control" id="Modalagregar-recipient-codigo" name="codigo" [(ngModel)]="nuevoLibro.codigo">
             </div>
             <div class="mb-3">
               <label for="Modalagregar-recipient-nombre" class="col-form-label">Nombre:</label>
-              <input type="text" class="form-control" id="Modalagregar-recipient-nombre">
+              <input type="text" class="form-control" id="Modalagregar-recipient-nombre" name="nombre" [(ngModel)]="nuevoLibro.nombre">
             </div>
             <div class="mb-3">
               <label for="Modalagregar-recipient-edicion" class="col-form-label">Edicion:</label>
-              <input type="text" class="form-control" id="Modalagregar-recipient-edicion">
+              <input type="text" class="form-control" id="Modalagregar-recipient-edicion" name="edicion" [(ngModel)]="nuevoLibro.edicion">
             </div>
             <div class="mb-3">
               <label for="Modalagregar-recipient-stock" class="col-form-label">Stock:</label>
-              <input type="text" class="form-control" id="Modalagregar-recipient-stock">
+              <input type="text" class="form-control" id="Modalagregar-recipient-stock" name="stock" [(ngModel)]="nuevoLibro.stock">
             </div>
             <div class="mb-3">
               <label for="Modalagregar-recipient-editorialid" class="col-form-label">ID Editorial:</label>
-              <input type="text" class="form-control" id="Modalagregar-recipient-editorialid">
+              <input type="text" class="form-control" id="Modalagregar-recipient-editorialid" name="editorial_id" [(ngModel)]="nuevoLibro.editorial_id">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn" style="background-color: #DFAD84;" >Guardar Cambios</button>
             </div>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn" style="background-color: #DFAD84;">Guardar Cambios</button>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="col-md-10 col-lg-8 col-xl-7">
           <div class="site-heading">
             <h1>BIBLIOTECA</h1>
-            <span class="subheading">Pagina Web para reserva de libros</span>
+            <span class="subheading">Pagina Web para que consultes tus libros</span>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
               </a>
             </li>
           </ul>
-          <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+          <div class="small text-center text-muted fst-italic">Grupo 3555</div>
         </div>
       </div>
     </div>

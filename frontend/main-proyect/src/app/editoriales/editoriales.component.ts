@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../servicios/api.service';
 
 @Component({
   selector: 'app-editoriales',
@@ -6,15 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./editoriales.component.css']
 })
 export class EditorialesComponent {
-  lista = [{
-    "id": "E0001",
-    "nombre": "Santa Fe",
-    "pais": "Colombia",
-    "ciudad": "Bogota"
-  }, {
-    "id": "E0002",
-    "nombre": "BookWorld",
-    "pais": "Estados Unidos",
-    "ciudad": "Washington DC"
-  }];
+  constructor(private apiService: ApiService) { }
+
+  lista: any[] = [];
+
+  ngOnInit(): void {
+    this.apiService.getEditorials().subscribe(
+      (data) => {
+        this.lista = data.data;
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
+  }
 }
